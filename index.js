@@ -7,7 +7,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 // Start both bots
 const bots = [
-  fork(path.join(__dirname, 'satoshi-qoutes.js')),
+  fork(path.join(__dirname, 'bible-qoutes.js')),
   fork(path.join(__dirname, 'welcome-bot.js'))
 ];
 

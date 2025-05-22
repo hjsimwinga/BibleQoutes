@@ -1,14 +1,14 @@
 {
   "name": "nostr-bots",
   "version": "1.0.0",
-  "description": "Nostr bots - Satoshi Quotes and Welcome Bot",
+  "description": "Nostr bots - Bible Quotes and Reacting Bot",
   "main": "index.js",
   "type": "module",
   "scripts": {
     "start": "node index.js",
-    "satoshi": "node satoshi-qoutes.js",
+    "Bible": "node bible-qoutes.js",
     "welcome": "node welcome-bot.js",
-    "start:all": "npm-run-all --parallel satoshi welcome"
+    "start:all": "npm-run-all --parallel bible welcome"
   },
   "dependencies": {
     "@noble/curves": "^1.9.1",
@@ -21,7 +21,7 @@
   "keywords": [
     "nostr",
     "bitcoin",
-    "satoshi",
+    "bible",
     "bot"
   ],
   "author": "",

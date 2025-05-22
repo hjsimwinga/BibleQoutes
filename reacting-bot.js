@@ -70,10 +70,10 @@ function createSubscription() {
 
       console.log(`⏳ Scheduling like for post with #${match} (ID: ${event.id.slice(0, 8)})`);
 
-      // Calculate delay: 1 hour (3600 seconds) from event creation
+      // Calculate delay: 4 hour (3600 X 4 seconds) from event creation
       const eventTime = event.created_at * 1000; // Convert to milliseconds
       const currentTime = Date.now();
-      const targetTime = eventTime + 3600 * 1000; // 1 hour after event creation
+      const targetTime = eventTime + 14400 * 1000; // 4 hour after event creation
       const delay = Math.max(0, targetTime - currentTime); // Ensure non-negative delay
 
       // Schedule like event
